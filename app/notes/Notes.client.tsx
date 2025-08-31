@@ -57,7 +57,7 @@ export default function NotesClient({ initialData }: NotesClientProps) {
       {totalPages > 1 && (
         <Pagination
           currentPage={currentPage}
-          setCurrentPage={setCurrentPage}
+          onPageChange={setCurrentPage}
           totalPages={totalPages}
         />
       )}
